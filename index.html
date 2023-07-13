@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <!-- add section about me and some history -->
+  <!-- TODO videos -->
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top border-dark border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#"><b>Michael Kutowski</b> <i>(Skytrias)</i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navvv" aria-controls="navvv" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navvv">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#About">About</a>
+            <a class="nav-link" href="#Products">Products</a>
+            <a class="nav-link" href="#Jams">Jams</a>
+            <a class="nav-link" href="#Paper-Implementations">Paper Implementations</a>
+            <a class="nav-link" href="#Open-Source-Contribution">Open Source Contribution</a>
+            <a class="nav-link" href="#Libraries">Libraries</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="About" class="bg-light text-dark">
+      <div class="container py-2" style="max-width: 800px;">
+        <div class="row">
+          <div class="col my-auto">
+            <h3>Michael Kutowski</h3>
+            <p class="px-4">UI Programmer<br>Graphics Programmer<br>Frontend Programmer</p>
+          </div>
+          
+          <div class="col">
+            <img src="assets/me.png" class="img-fluid rounded" style="max-height: 300px">
+          </div>
+
+          <ul class="col list-group text-center my-auto">
+            <a href="https://github.com/Skytrias" class="list-group-item list-group-item-action">Github</a>
+            <a href="https://twitter.com/Skytrias" class="list-group-item list-group-item-action">Twitter</a>
+            <a href="https://www.youtube.com/@Skytrias" class="list-group-item list-group-item-action">Youtube</a>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="Products" class="bg-light text-dark">
+      <div class="container py-2">
+        <!-- Products -->
+        <h1 class="text-center">Products</h1>
+
+        <div class="card mb-3 bg-primary text-dark">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <img src="assets/todool.png" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h3 class="card-title"><a class="link-info" href="https://todool.de/">Todool</a></h3>
+                <p class="card-text">Powerful Todo Editor written from scratch. For a list of features check out the site.</p>
+                <p class="card-text">Worked on for about 1.5 years fully independent.</p>
+                <p class="card-text">Implemented in Odin with OpenGL.</p>
+                <p class="card-text"><small>Released 09-2022</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Jams" class="bg-light text-dark">
+      <div class="container py-2">
+        <!-- Projects / Jams -->
+        <h1 class="text-center">Jams</h1>
+
+        <div class="card mb-3 bg-secondary text-dark">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="card-body rounded-start">
+                <h3 class="card-title"><a class="link-info" href="https://handmade.network/p/274/sdf-atlas/">SDF-Atlas</a></h3>
+                <p class="card-text">Collaboration Jam Entry for <a class="link-info" href="https://handmade.network/jam/2022">Handmade Network 2022</a>.</p>
+                <p class="card-text">SDF-Atlas allows inserting SDF-Primitives like a vector edtitor.</p>
+                <p class="card-text">Traditional features are implemented through SDF-Techniques such as warps, scaling, rounding, etc.</p>
+                <p class="card-text"><small>Released 08-2022 ~ 1 week</small></p>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <img src="assets/atlas.png" class="img-fluid rounded-end">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Paper-Implementations" class="bg-light text-dark">
+      <div class="container py-2">
+        <!-- Paper Implementations -->
+        <h1 class="text-center">Paper Implementations</h1>
+
+        <!-- MPVG -->
+        <div class="card mb-3 bg-success text-dark">
+          <div class="row g-0">
+            <div class="col-md-8 text-center">
+              <img src="assets/hawaii.png" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h3 class="card-title"><a class="link-info" href="https://github.com/Skytrias/mpvg">MPVG Implementation</a></h3>
+                <p class="card-text"><a class="link-info" href="https://w3.impa.br/~diego/projects/GanEtAl14/">Massively-Parallel Vector Graphics</a> implemented with OpenGL Compute.</p>
+                <p class="card-text">Allows rendering vector graphics like text or polygon shapes quickly.</p>
+                <p class="card-test"><a class="link-info" href="https://www.forkingpaths.dev/index.html">Martin Fouilleul</a> helped me tremendously as they implemented it in Metal.</p>
+                <p class="card-text"><small>Done</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Open-Source-Contribution" class="bg-light text-dark">
+      <div class="container py-2">
+        <!-- Open Source Contribution -->
+        <h1 class="text-center">Open Source Contribution</h1>
+
+        <div class="card mb-3 bg-danger text-dark">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="card-body rounded-start">
+                <h3 class="card-title"><a class="link-info" href="https://github.com/odin-lang/Odin">Odin Core/Vendor Contribution</a></h3>
+                <p class="card-text">Added lots of documentation to the <code>core</code> library and fixed bugs.</p>
+                <p class="card-text">Pushed several <code>C</code> to <code>Odin</code> ports to the <code>vendor</code> library.</p>
+                <p class="card-text"><a class="link-info" href="https://github.com/odin-lang/Odin/issues?q=author%3Askytrias+is%3Aclosed">List</a> of contributions so far ~ dating back 4 years</p>
+                <p class="card-text"><small>Ongoing</small></p>
+              </div>
+            </div>
+
+            <div class="col-md-8 text-center my-auto">
+              <a class="link-info" href="https://odin-lang.org/"><img src="assets/odin-logo.png" class="img-fluid rounded-end"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 bg-primary text-dark">
+          <div class="row g-0">
+            <div class="col-md-8 text-center">
+              <img src="assets/odin-website-example.png" class="img-fluid rounded-start" style="max-height: 400px">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h3 class="card-title"><a class="link-info" href="https://github.com/Skytrias/odin-lang.org">Odin Website Contribution</a></h3>
+                <p class="card-text">Static Hugo & Bootstrap Site</p>
+                <p class="card-text">Updating the general language Overview. Implemented newsletter youtube/image/text templates.</p>
+                <p class="card-text"><small>Ongoing</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Libraries" class="bg-light text-dark">
+      <div class="container py-2"> 
+        <!-- libraries -->
+        <h1 class="text-center">Libraries</h1>
+
+        <div class="card mb-3 bg-secondary text-dark">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="card-body rounded-start">
+                <h3 class="card-title"><a class="link-info" href="https://github.com/Skytrias/simple-history">Simple History</a></h3>
+                <p class="card-text">Odin implementation of the <code>rxi</code> <a class="link-info" href="https://rxi.github.io/a_simple_undo_system.html">blog post</a> on simple undo/redo history based on saving memory before/after.</p>
+                <p class="card-text">Works really well for simple cases but requires a lot of memory.</p>
+                <p class="card-text">Privately using an improved version of it based on <a class="link-info" href="https://maxliani.wordpress.com/2021/09/01/undo-the-art-of-part-1/">XOR Undo</a> </p>
+                <p class="card-text"><small>Done</small></p>
+              </div>
+            </div>
+
+            <div class="col-md-8 text-center">
+              <img src="assets/undo.png" class="img-fluid my-auto rounded-end">
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 bg-success text-dark">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <img src="assets/luigi.png" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h3 class="card-title"><a class="link-info" href="https://github.com/Skytrias/luigi">Luigi RMGUI Port</a></h3>
+                <p class="card-text">An early port of <a class="link-info" href="https://github.com/nakst/luigi">Luigi</a> from <code>nakst</code>.</p>
+                <p class="card-text"><a class="link-info" href="https://nakst.gitlab.io/tutorial/ui-part-1.html">Original Blog Series</a> explanation on the core implementation.</p>
+                <p class="card-text">The example image is from the original repo to show what it's capable of.</p>
+                <p class="card-text">Reminder the graphics implementation can be customized.</p>
+                <p class="card-text"><small>Done - Outdated</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Old -->
+      <!-- <h1>OLD</h1> -->
+      <!-- <small>Larger abandoned projects</small> -->
+
+      <!-- <div class="container"> -->
+        <!-- <p>Everpuzzle - Tetris Attack clone - Rust</p> -->
+        <!-- <a class="link-info" href="https://github.com/Skytrias/everpuzzle">yo</a> -->
+      <!-- </div> -->
+
+      <!-- <div class="container"> -->
+        <!-- <p>Swap-N-Pop - Tetris Attack clone - TypeScript & Electron</p> -->
+        <!-- <a class="link-info" href="https://github.com/omenking/swap-n-pop">yo</a> -->
+      <!-- </div> -->
+  </body>
+
+  <script type="text/javascript" src="script.js"></script>
+</html>
